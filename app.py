@@ -59,22 +59,22 @@ st.markdown(css_code, unsafe_allow_html=True)
 
 
 
-
-with st.sidebar:
-    st.markdown("# 🤖 聊天窗口")
-    # 创建容器的目的是配合自定义组件的监听操作
-    chat_container = st.container()
-    with chat_container:
-        current_chat = st.radio(
-            label='历史聊天窗口',
-            format_func=lambda x: x.split('_')[0] if '_' in x else x,
-            options=st.session_state['history_chats'],
-            label_visibility='collapsed',
-            index=st.session_state["current_chat_index"],
-            key='current_chat' + st.session_state['history_chats'][st.session_state["current_chat_index"]],
-            # on_change=current_chat_callback  # 此处不适合用回调，无法识别到窗口增减的变动
-        )
-    st.write("---")
+if authentication_status:
+    with st.sidebar:
+        st.markdown("# 🤖 聊天窗口")
+        # 创建容器的目的是配合自定义组件的监听操作
+        chat_container = st.container()
+        with chat_container:
+            current_chat = st.radio(
+                label='历史聊天窗口',
+                format_func=lambda x: x.split('_')[0] if '_' in x else x,
+                options=st.session_state['history_chats'],
+                label_visibility='collapsed',
+                index=st.session_state["current_chat_index"],
+                key='current_chat' + st.session_state['history_chats'][st.session_state["current_chat_index"]],
+                # on_change=current_chat_callback  # 此处不适合用回调，无法识别到窗口增减的变动
+            )
+        st.write("---")
 
 
 # 数据写入文件

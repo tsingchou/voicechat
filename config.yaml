@@ -3,10 +3,18 @@ credentials:
     tsingchou:
       email: tsingchou@outlook.com
       name: Qing Zhou
-      password: $2b$12$ZDfdtAt4XTXV4kY9ZxlXsOQuLf/etgu4ZoA0wxJsYZxDacYciilSG # qianqian
+      password: $2b$12$ZDfdtAt4XTXV4kY9ZxlXsOQuLf/etgu4ZoA0wxJsYZxDacYciilSG
     zhouqing:
       email: 165652713@qq.com
       name: Zhou Qing
+      password: $2b$12$dG77vFCHcrPSRYVgwNRVNOqxDUh8OjQXrUeFraOPBDNAgqYblh3cC # 1234@abcd
+    luping:
+      email: 165652713@qq.com
+      name: Lu Ping
+      password: $2b$12$dG77vFCHcrPSRYVgwNRVNOqxDUh8OjQXrUeFraOPBDNAgqYblh3cC # 1234@abcd
+    cjjc:
+      email: zhaoqianzhouqing@qq.com
+      name: CJJC
       password: $2b$12$dG77vFCHcrPSRYVgwNRVNOqxDUh8OjQXrUeFraOPBDNAgqYblh3cC # 1234@abcd
 cookie:
   expiry_days: 0
