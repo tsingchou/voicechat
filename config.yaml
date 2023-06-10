@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    tsingchou:
+      email: tsingchou@outlook.com
+      name: Qing Zhou
+      password: $2b$12$ZDfdtAt4XTXV4kY9ZxlXsOQuLf/etgu4ZoA0wxJsYZxDacYciilSG # qianqian
+    zhouqing:
+      email: 165652713@qq.com
+      name: Zhou Qing
+      password: $2b$12$dG77vFCHcrPSRYVgwNRVNOqxDUh8OjQXrUeFraOPBDNAgqYblh3cC # 1234@abcd
+cookie:
+  expiry_days: 0
+  key: tsingchou # Must be string
+  name: tsingchou
+preauthorized:
+  emails:
+  - tsingchou@outlook.com
